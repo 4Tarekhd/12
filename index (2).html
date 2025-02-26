@@ -1,0 +1,128 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(https://i.postimg.cc/FKJbP12Z/rm21-texture-jite-47.jpg);
+        color: #fff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        text-align: center;
+        background-image: url(https://i.postimg.cc/FKJbP12Z/rm21-texture-jite-47.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        width: 300px;
+    }
+    .container h1 {
+        font-size: 16px;
+        color: green;
+        margin-bottom: 10px;
+    }
+    .developer {
+        font-size: 12px;
+        background-color: rgb(11, 190, 255);
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .buttons button {
+        width: 60%; /* Adjust width to make it look better */
+        margin: 10px 0;
+        padding: 12px;
+        font-size: 14px;
+        border: none;
+        border-radius: 50px; /* This will make the button round */
+        color: white;
+        background: #598cff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; /* Smooth transition */
+    }
+    .buttons button:hover {
+        background: #ff9aad;
+        transform: scale(1.1); /* Slightly increase size on hover */
+    }
+    .withdraw-section input, .withdraw-section select {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 5px;
+        border: 2px solid #555;
+        background-image: url(https://i.postimg.cc/FKJbP12Z/rm21-texture-jite-47.jpg);
+        color: #fff;
+    }
+    .withdraw-section input:focus, .withdraw-section select:focus {
+        border-color: green;
+        outline: none;
+    }
+    .withdraw-section button {
+        background-color: #598cff;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-top: 15px;
+        border-radius: 50px; /* Make withdrawal button round */
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .withdraw-section button:hover {
+        background-color: rgb(128, 153, 255);
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    <div class="container">
+        <h1> Watch Ads & Earn Money</h1>
+        <p>    0.2  !</p>
+        <p>    (  )</p>
+        <p>  :   (bKash)</p>
+        <button class="watch-ads-btn" onclick="watchAds()">Watch Ads & Earn Money</button>
+        <button class="direct-btn" onclick="window.open('https://nanoushaks.net/4/8925658/direct', '_blank')">Direct</button>
+        <button class="community-btn" onclick="window.open('https://t.me/freeincomTipsBangla', '_blank')">Community</button>
+        <button class="youtube-btn" onclick="window.open('https://youtube.com/@itb-24s?si=NvBiNlt46mV6teHC', '_blank')">YouTube</button><h3> Withdraw Request</h3>
+    <p> : <span id="balance">0.00</span> </p>
+    <input type="number" id="withdrawAmount" placeholder="Withdraw Amount (min 100 BDT)" />
+    <input type="text" id="bKashNumber" placeholder="  (11 )" />
+    <br />
+    <button onclick="return validateWithdraw()">Withdraw</button>
+
+    <h3> Join Our Community</h3>
+    <div class="telegram-links">
+        <a href="https://t.me/usdtgiveeway6" class="channel"> Join Telegram Channel</a>
+        <a href="https://t.me/tarekczrf" class="group"> Join Telegram Group</a>
+    </div>
+
+    <script>
+        let balance = 0.0;
+
+        function watchAds() {
+            balance += 0.2; // Earn 0.2 BDT per ad
+            document.getElementById('balance').innerText = balance.toFixed(2); // Update balance
+            alert("   !   .   ");
+        }
+
+        function validateWithdraw() {
+            const withdrawAmount = document.getElementById('withdrawAmount').value;
+            const bKashNumber = document.getElementById('bKashNumber').value;
+            if (withdrawAmount < 100) {
+                alert("   ");
+                return false;
+            }
+            if (bKashNumber.length !== 11) {
+                alert("   ");
+                return false;
+            }
+            alert("Withdrawal request successfully submitted.");
+            return true;
+        }
+    </script>
+</div>
+
+</body>
+</html
